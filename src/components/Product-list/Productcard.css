@@ -1,0 +1,80 @@
+.product-container{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-around;
+}
+.product{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width:450px;
+    height: 450px;
+    border: 1px solid rgb(89, 89, 89);
+    backdrop-filter: blur(30px);
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.product img{
+    width:auto;
+    height:250px;
+}
+a{
+    color: white;
+    height: fit-content;
+}
+a:hover .quicknav{
+    visibility: visible;
+    opacity: 1;
+}
+h3{
+    font-family: "Poppins";
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+h4{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+.stars{
+    font-weight: 100;
+    font-size: large;
+}
+.quicknav{
+    position: absolute;
+    bottom: 150px;
+    display: flex;
+    gap: 15px;
+    visibility: hidden;
+    opacity: 0; /* Fully transparent */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.quicknav button{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgba(224, 224, 224, 0.623);
+    border: none;
+    transition:all 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quicknav i{
+    font-size: x-large;
+    color: black;
+    transition: all .2s ease-in;
+}
+.quicknav button:hover{
+    border: 1px solid rgba(224, 224, 224, 0.623);
+    background-color: rgba(0, 0, 0, 0.623);
+}
+.quicknav i:hover{
+    color: white;
+}

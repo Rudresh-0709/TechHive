@@ -1,0 +1,44 @@
+.alsolike{
+    background-color: black;
+    padding-top: 60px;
+}
+.alsolike h1{
+    color: white;
+    text-align: center;
+}
+.similarproducts{
+    margin-top: 30px;
+    height: 30%;
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.similarproduct{
+
+    width: fit-content;
+}
+.similarproduct h2{
+    padding: 20px 0 5px 0;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    font-weight: 500;
+}
+.similarproduct h3{
+    padding: 0px 0 10px 0;
+    color: rgb(174, 174, 174);
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+.prodimage{
+    display: flex;
+    padding:40px 20px;
+    background-color: rgba(56, 56, 56, 0.5);
+    border-radius:10px;
+}
+.prodimage img{
+    height:250px;
+    width: auto;
+}
+

@@ -1,0 +1,10 @@
+.allproducts{
+    display: flex;
+    margin-top: 75px;
+}
+Productcard{
+    width:70%
+}
+.product-page{
+    background-color: black;
+}

@@ -1,0 +1,7 @@
+.navbar__logo{
+    height:70px;
+    width: 140px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../../public/assets/TechHive.jpeg);
+}

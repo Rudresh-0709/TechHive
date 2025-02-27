@@ -1,0 +1,24 @@
+.dslr{
+    width:100vw;
+    height:70vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dslr h1{
+    color: white;
+    backdrop-filter:brightness(70%);
+    font-style: italic;
+}
+.dslr h3{
+    margin-top: 20px;
+    color:white;
+    backdrop-filter: blur(5px);
+    text-align: right;
+}

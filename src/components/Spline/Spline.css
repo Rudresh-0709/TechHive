@@ -1,0 +1,16 @@
+main{
+    position: relative;
+}
+
+.moto{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top:30%;
+    left: 5%;
+    font-size: 40px;
+    font-weight:900;
+    text-shadow: 3px 3px rgb(0,162,255);
+    font-family:Flux,'Courier New', Courier, monospace;
+    letter-spacing: 10px;
+}
