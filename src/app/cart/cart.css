@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.cartpage{
+    background-color: black;
+}
+section {
+    font-family: "Poppins";
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.cartdiv {
+    width: 50%;
+    min-height: 300px; 
+    max-height: calc(100vh - 40px); 
+    overflow-y: auto; 
+}
+
+.pricediv {
+    min-height: 300px;
+    width: 30%;
+    background-color: rgba(25, 25, 25, 0.75);
+    padding: 30px;
+    overflow-y: auto;
+}
+.cart-item {
+    height:250px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cart-item-details{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 50px;
+}
+/* Product Details */
+.cart-item-details h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    color: white;
+}
+span{
+    font-size: 15px;
+    color: gray;
+    padding:0px 10px;
+}
+.cartfunc button{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    color: gray;
+}
+.cart-item-details p {
+    color: gray;
+    margin: 0;
+}
+.productquantity{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px
+}
+.counter{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+}
+.counter button,h4{
+    padding: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: gray;
+    border: none;
+}
+.productprice{
+    color: white;
+    font-weight: 200;
+    
+}
+.productprice h2{
+    font-weight: 200;
+}
+.billheading{
+    height:100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.billheading h3{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.pricetotal{
+    color: white;
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pricetotal h3{
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+}
+.pricetotal h2{
+    font-weight: 400;
+    font-size: 17px;
+}
+.finaltotal{
+    color: white;
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.finaltotal h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+.finaltotal h2{
+    font-weight: 500;
+    font-size: 30px;
+}
+.coupon{
+    color: white;
+    min-height:80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+.coupon h3{
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.coupon input{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+#addressinput{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+.checkout{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid transparent;
+    color: black;
+    margin-top: 30px;
+    font-size: 17px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    transition: all 0.3s ease-in;
+}
+.checkout:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+checkout:active{
+    border-color: grey;
+}
+input:active,input:focus,textarea:active,textarea:focus{
+    outline: none;
+    color: white;
+}

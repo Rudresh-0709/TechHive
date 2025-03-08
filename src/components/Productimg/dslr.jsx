@@ -1,7 +1,7 @@
 import React from 'react'
 import './dslr.css';
 
-function Dslr() {
+function Dslr({quote}) {
     const randomimage = [
         '/assets/dslr.jpg',
         '/assets/headphones.jpg',
@@ -20,9 +20,16 @@ function Dslr() {
     
   return (
     <div className='dslr' style={{backgroundImage:`url(${rand})`}}>
-        <h1>The technology you use impresses no one. </h1>
-        <h1>The experience you create with it is everything.</h1>
-        <h3>~ SEAN GERETY</h3>
+        {quote?(
+          <h1>{quote}</h1>
+        ):(
+            <>
+              <h1>The technology you use impresses no one. </h1>
+              <h1>The experience you create with it is everything.</h1>
+              <h3>~ SEAN GERETY</h3>
+            </>
+          )
+        }
     </div>
   )
 }

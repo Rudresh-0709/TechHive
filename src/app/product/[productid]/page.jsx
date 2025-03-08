@@ -1,11 +1,16 @@
 "use client";
-import { useParams } from "next/navigation";
+import { useParams,redirect } from "next/navigation";
 import Products from "../../../../data/products.json";
 import "./page.css";
 import Image from "next/image";
 import Alsolike from "@/components/alsolike/Alsolike";
+import { useContext, useState } from "react";
+import UserContext from "@/contexts/UserContext";
+import CartContext from "@/contexts/CartContext";
 
 export default function Page(){
+    const {user} = useContext(UserContext)
+    const {setCart} = useContext(CartContext)
     const params = useParams();
     const productId = parseInt(params.productid, 10);
     function renderstars (rating){
@@ -24,6 +29,32 @@ export default function Page(){
             </div>
         )
     }
+    const handlecart = ()=>{
+        if(!user){
+            redirect('/auth/login')
+        }
+        else{
+            setCart(prevCart=>{
+                const newcart= {...prevCart}
+
+                if (newcart[productId]){
+                    newcart[productId].count+=1;
+                }
+                else{
+                    newcart[productId]={
+                        productId,
+                        name: product.name,
+                        price:product.price,
+                        image: product.image,
+                        count: 1
+                    }
+                }
+                return newcart
+            })
+            redirect('/cart')
+        }
+    }
+
     // Find the product by ID
     const product = Products.find(p => p.id === productId);
     return(
@@ -53,7 +84,7 @@ export default function Page(){
                     <div className="productbutton">
                         <div className="sharecart">
                             <button className="share"><i className="ri-share-line"></i></button>
-                            <button className="cart">ADD TO CART</button>
+                            <button className="cart" onClick={handlecart}>ADD TO CART</button>
                         </div>
                         <div className="buy">
                             <button>BUY IT NOW</button>

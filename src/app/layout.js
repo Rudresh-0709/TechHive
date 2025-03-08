@@ -1,9 +1,12 @@
+
+import LayoutWrapper from "@/components/LayoutWrapper";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
-
+import UserContextProvider from "@/contexts/UserContextProvider";
+import CartContextProvider from "@/contexts/CartContextProvider";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,9 +23,11 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body >
-        <Navbar></Navbar>
-          {children}
-        <Footer/>
+        <UserContextProvider>
+          <CartContextProvider>
+            <LayoutWrapper>{children}</LayoutWrapper> 
+          </CartContextProvider>
+        </UserContextProvider>
       </body>
     </html>
   );

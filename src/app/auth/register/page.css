@@ -1,0 +1,102 @@
+html,body{
+    font-family: "Poppins";
+    height: 100%;
+}
+.main{
+    background-color: rgb(0, 7, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.login{
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    width:85%;
+    height: 600px;
+    display: flex;
+}
+.vanta-bg{
+    width: 50%;
+}
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.loginheading{
+    height: 25%;
+}
+h2{
+    text-align: left;
+    font-size: 45px;
+    font-weight: 600;
+}
+h3{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+form{
+    height: 90%;
+    width: 70%;
+    display: flex;;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    gap: 15px;
+}
+.username{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.username label{
+    font-size: 17px;
+
+}
+.username input{
+    width:80%;
+    height:35px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.username input:active{
+    outline: none;
+}
+.username input:focus{
+    outline: none;
+}
+button{
+    margin-top: 20px;
+    width: 30%;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 11px 0px inset, rgba(0, 0, 0, 0.3) 0px 18px 11px 0px inset;
+}
+a{
+    text-align: left;
+    font-size: 15px;
+    color: rgb(108, 186, 255);
+}
+.register{
+    font-size: 15px;
+    font-weight: 300;
+    gap: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.register h4{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+}
