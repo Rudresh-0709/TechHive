@@ -95,7 +95,7 @@ span{
     display: flex;
     align-items: center;
 }
-.counter button,h4{
+.counter button,.counter h4{
     padding: 10px;
     font-size: 15px;
     background-color: transparent;

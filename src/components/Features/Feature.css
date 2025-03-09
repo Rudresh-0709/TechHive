@@ -1,0 +1,27 @@
+.featuresection{
+    font-family: "Poppins";
+    height: 20vh;
+    background-color: black;
+    padding:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.features{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.feature{
+    display: flex;
+    width: 20%;
+    gap: 10px;
+}
+.feature i{
+    font-size: 40px;
+    font-weight: 200;
+}
+.feature h3{
+    font-weight: 400;
+}

@@ -89,7 +89,7 @@ function cart() {
             </div>
             <div className="pricetotal">
               <h3>Delivery Charges</h3>
-              <h2>$ {Math.floor(getTotalPrice(cart)*1/100)}</h2>
+              <h2>$ {Math.floor(getTotalPrice(cart)*1/100)<=35?Math.floor(getTotalPrice(cart)*1/100):"FREE"}</h2>
             </div>
             <div className="coupon">
               <h3>Coupon</h3>
